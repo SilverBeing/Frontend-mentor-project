@@ -1,0 +1,205 @@
+/* General Styling*/
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Epilogue', sans-serif;
+    background-color:  hsl(0, 0%, 98%);
+    min-height: 100vh;
+    
+}
+/* Navigation Styling*/
+.navbar-nav li{
+    margin-left: 20px;
+    position: relative;
+    font-size: 14px;
+}
+.nav-item a{
+    color: hsl(0, 0%, 41%);
+    
+}
+.dropdown-menu{
+    box-shadow: 0px 2px 100px hsl(0, 0%, 91%) ;
+    border: 15px solid white;
+    border-radius: 15px;
+    display: none;
+}
+.dropdown-item{
+    font-size: 12px;
+    box-shadow: 0 0 0 13px white;
+    border-radius: 5px;
+    text-align: left;
+
+}
+.home-menu{
+    position: absolute;
+    top: 18px;
+    right: 0px;
+}
+.close-menu{
+    display: none;
+    float: right;
+}
+a:hover{
+    color: black;
+}
+#login{
+    color: hsl(0, 0%, 41%);
+    font-size: 14px;
+    text-decoration: none !important
+}
+#login:hover{
+    color: black;
+    cursor: pointer;
+}
+#button1{
+    border-radius: 10px;
+    width: auto;
+    border-color: hsl(0, 0%, 41%);
+    color: hsl(0, 0%, 41%);
+    font-size: 14px;
+    background-color: transparent;
+}
+#button1:hover{
+    color: black;
+}
+
+
+/*Dropdown Styling*/
+.dropdown-item img{
+    padding-right: 1em;
+}
+.dropdown-toggle::after{
+    display:none;
+    
+}
+.arrow-down{
+   position: relative;
+   display: none;
+}
+.nav-item:hover .dropdown-menu{
+    display: block;
+
+}
+.nav-item:hover .arrow-up{
+    display: none;
+
+}
+.nav-item:hover .arrow-down{
+    display: inline-flex;
+
+}
+.dropdown-toggle .dropdown-menu:hover{
+    display: block
+
+}
+
+
+/*Main Page styling*/
+.col-12 h1{
+    font-size: 65px;
+    font-weight: bold;
+    color: hsl(0, 0%, 8%);
+    width: 80%;
+    margin-top: 18px;
+
+}
+.col-12 p{
+    font-size: 15px;
+    color: hsl(0, 0%, 41%);
+    line-height: 25px;
+    letter-spacing: 1px;
+    margin-top: 3em;
+    width: 80%;
+}
+.image{
+    width: 80%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.image1{
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: none;
+}
+.logos{
+   position: relative;
+   top: 5em
+}
+.logos img:first-child{
+    padding-left: 0px !important;
+}
+.logos img{
+    padding-left: 8%;
+
+}
+#button2{
+    margin-top: 50px;
+    border-radius: 15px;
+    margin-bottom: 32px;
+    width: 150px;
+    height: 50px;
+    color: white;
+    font-size: 14px;
+    background-color: black;
+}
+#button2:hover{
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+}
+
+/*width of the .nav-menu on laptop screens*/
+@media only screen and (min-width:768px){
+    .width{
+        width: 100%;
+    }
+}
+
+/*Mobile Styling*/
+@media only screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    .col-12 h1{
+        font-size: 40px;
+        width: 100%;
+    }
+    img[src*="image-hero-desktop"]{
+        display: none;
+    }
+    img[src*="image-hero-mobile"]{
+        display: block;
+        margin-bottom: 64px;
+    }
+    .logos img{
+        padding-left: 1em;
+        margin-bottom: 64px;
+    }
+    .col-12 p{
+        width: 100%;
+    }
+    .nav-menu{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 100000;
+        min-height: 100vh;
+        background-color:  hsl(0, 0%, 98%);
+    }
+}
+/*Footer styling*/
+.attribution{
+    font-size: 12px;
+    text-align: center;
+    color:hsl(0, 0%, 41%)
+}

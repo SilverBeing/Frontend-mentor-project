@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+
+<body>
+  <!-- Navigation-->
+    <header>
+      <section class="container-fluid">
+        <nav class="navbar navbar-expand-lg nav-dark w-100 ">
+          <a href="./index.html"class="navbar-brand "><img src="./images/logo.svg"alt="Website logo"/></a>
+          <div class="nav-menu width">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav">
+              <span class="navbar-toggler-icon home-menu"><img src="./images/icon-menu.svg"alt="Toggler icon"/></span>
+              <span class="navbar-toggler-icon close-menu"><img src="./images/icon-close-menu.svg"alt="Toggler Icon"/></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="main-nav">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown active">
+                  <a class="nav-link dropdown-toggle" href="#">
+                Features <span class="dropdown-toggle-icon arrow-up"><img src="./images/icon-arrow-down.svg" alt="arrow down icon"/></span>
+                <span class="dropdown-toggle-icon arrow-down"><img src="./images/icon-arrow-up.svg" alt="arrow up icon"/></span>
+                </a>
+                  <div class="dropdown-menu">
+                    <a target="_blank" href="#" class="dropdown-item "><img src="./images/icon-todo.svg"alt="todo icon" rel="noopener"/>Todo List</a>
+                    <a target="_blank" href="#"  class="dropdown-item "><img src="./images/icon-calendar.svg" alt="calendar icon" rel="noopener"/>Calendars</a>
+                    <a target="_blank" href="#" class="dropdown-item "><img src="./images/icon-reminders.svg"alt="reminders icon" rel="noopener"/>Reminders</a>
+                    <a target="_blank" href="#" class="dropdown-item "><img src="./images/icon-planning.svg"alt="planning icon" rel="noopener"/>Planning</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#">
+                    Company <span class="dropdown-toggle-icon arrow-up"><img src="./images/icon-arrow-down.svg"alt="arrow down icon"/></span>
+                  <span class="dropdown-toggle-icon arrow-down"><img src="./images/icon-arrow-up.svg"alt="arrow up icon"/></span></a>
+                  <div class="dropdown-menu">
+                    <a target="_blank" href="#" class="dropdown-item" rel="noopener">History</a>
+                    <a target="_blank" href="#"  class="dropdown-item" rel="noopener">Our Team</a>
+                    <a target="_blank" href="#" class="dropdown-item" rel="noopener">Blog</a>
+                  </div>
+
+                </li>
+                <li class="nav-item">
+                  <a target="_blank" class="nav-link" href="#">Careers</a>
+                </li>
+                <li class="nav-item">
+                  <a target="_blank"class="nav-link" href="#">About</a>
+                </li>
+              </ul>
+              <div class="d-md-flex align-items-center ml-auto">
+                <div class="mx-5  text-center ">
+                  <a target="_blank" id="login" href="#">Login</a>
+                </div>
+                <div class="text-center py-md-0 py-3">
+                  <a target="_blank" href="#"><button class="btn btn-outline-dark" type="button" id="button1" rel="noopener">Register</button></a>
+                </div>
+      
+
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+    </header>
+
+
+    <!-- Main body-->
+    <main>
+      <div class="container py-5">
+        <div class="row flex-md-row justify-content-center flex-column-reverse align-items-center">
+          <div class="col-12 col-md-6 col-xs-12 text-center text-md-left">
+            <h1>Make remote work</h1>
+            <p>Get your team insync, no matter your location. Streamline processess, create team rituals, and watch productivity soar.</p>
+            <a href="#"><button id="button2">Learn More</button></a>
+            <div class="logos">
+              <img src="./images/client-databiz.svg" alt="databiz"/>
+              <img src="./images/client-audiophile.svg" alt="audiophile"/>
+              <img src="./images/client-meet.svg" alt="meet"/>
+              <img src="./images/client-maker.svg" alt="maker"/>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xs-12 text-center mobile-image">
+            <img src="./images/image-hero-desktop.png" class="float-md-right image "alt="hero-desktop image"/>
+            <img src="./images/image-hero-mobile.png" class="image1" alt="hero-mobile image"/>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Silver Idahosa</a>.
+      </div>
+    </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>

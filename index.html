@@ -5,204 +5,105 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="./reset.css">
   <link rel="stylesheet" href="./style.css">
-  <title>Frontend Mentor | Sunnyside agency landing page</title>
-  <script src="https://kit.fontawesome.com/459372f92b.js" crossorigin="anonymous"></script>
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
 </head>
+
 <body>
-  <header><!-- Header -->
-    <nav class="d-flex container-fluid py-3 align-items-center">
-      <div class="logo">
-        <img src="./images/logo.svg" alt="website logo"/>
-      </div>
-      <div class="nav-menu d-md-flex w-100">
-        <ul class="d-flex list-unstyled ml-md-auto">
-          <li><a href="#" target="_blank">About</a></li>
-          <li><a  href="#" target="_blank">Services</a></li>
-          <li><a  href="#" target="_blank">Project</a></li>
-        </ul>
-        <div >
-          <button class="btn text-uppercase" type="button" id="button1">Contact</button>
-        </div>
-      </div>
-      <!-- Toggler Icon -->
-      <img class="home"src="./images/icon-hamburger.svg" alt="hamburger icon"/>
-      <img class="close"src="./images/icon-hamburger.svg" alt="hamburger icon"/>
-    </nav>
-    <div class="text-center">
-      <h1 class="text-uppercase">We are creatives</h1>
-    </div>
-    <div class="text-center">
-      <img src="./images/icon-arrow-down.svg" alt="arrow down logo"/>
-    </div>
-  </header>
+  <!-- Navigation-->
+    <header>
+      <section class="container-fluid">
+        <nav class="navbar navbar-expand-lg nav-dark w-100 ">
+          <a href="./index.html"class="navbar-brand "><img src="./images/logo.svg"alt="Website logo"/></a>
+          <div class="nav-menu width">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav">
+              <span class="navbar-toggler-icon home-menu"><img src="./images/icon-menu.svg"alt="Toggler icon"/></span>
+              <span class="navbar-toggler-icon close-menu"><img src="./images/icon-close-menu.svg"alt="Toggler Icon"/></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="main-nav">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown active">
+                  <a class="nav-link dropdown-toggle" href="#">
+                Features <span class="dropdown-toggle-icon arrow-up"><img src="./images/icon-arrow-down.svg" alt="arrow down icon"/></span>
+                <span class="dropdown-toggle-icon arrow-down"><img src="./images/icon-arrow-up.svg" alt="arrow up icon"/></span>
+                </a>
+                  <div class="dropdown-menu">
+                    <a target="_blank" href="#" class="dropdown-item "><img src="./images/icon-todo.svg"alt="todo icon" rel="noopener"/>Todo List</a>
+                    <a target="_blank" href="#"  class="dropdown-item "><img src="./images/icon-calendar.svg" alt="calendar icon" rel="noopener"/>Calendars</a>
+                    <a target="_blank" href="#" class="dropdown-item "><img src="./images/icon-reminders.svg"alt="reminders icon" rel="noopener"/>Reminders</a>
+                    <a target="_blank" href="#" class="dropdown-item "><img src="./images/icon-planning.svg"alt="planning icon" rel="noopener"/>Planning</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#">
+                    Company <span class="dropdown-toggle-icon arrow-up"><img src="./images/icon-arrow-down.svg"alt="arrow down icon"/></span>
+                  <span class="dropdown-toggle-icon arrow-down"><img src="./images/icon-arrow-up.svg"alt="arrow up icon"/></span></a>
+                  <div class="dropdown-menu">
+                    <a target="_blank" href="#" class="dropdown-item" rel="noopener">History</a>
+                    <a target="_blank" href="#"  class="dropdown-item" rel="noopener">Our Team</a>
+                    <a target="_blank" href="#" class="dropdown-item" rel="noopener">Blog</a>
+                  </div>
 
-  <!-- !st Section-->
-  <main>
-    <section class="container-fluid">
-      <div class="row d-flex flex-md-row flex-column-reverse">
-        <div class="col-12 col-md-6 col-xs-12">
-          <div class="writeup">
-            <h2>Transform your brand</h2>
-            <p>We are a full-service creative agency specializing in helping brands grow fast. 
-              Engage your clients through compelling visuals that do most of the marketing for you.</p>
-            <a href="#" class="text-uppercase">Learn More</a>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-xs-12">
-          <!-- Image represent desktop images. Image1 represent mobile images -->
-          <div class="image">
-            <img src="./images/desktop/image-transform.jpg" alt="transform image"/>
-          </div>
-          <div class="image1">
-            <img src="./images/mobile/image-transform.jpg" alt="transform image"/>
-          </div>
-        </div>
-      </div>
-      <div class="row d-flex">
-        <div class="col-12 col-md-6 col-xs-12">
-          <div class="image">
-            <img src="./images/desktop/image-stand-out.jpg" alt="standout image"/>
-          </div>
-          <div class="image1">
-            <img src="./images/mobile/image-stand-out.jpg" alt="standout image"/>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-xs-12">
-          <div class="writeup">
-            <h2>Stand out to the right audience</h2>
-            <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. .</p>
-            <a href="#" class="text-uppercase" id="stroke">Learn More</a>
-          </div>
-        </div>
+                </li>
+                <li class="nav-item">
+                  <a target="_blank" class="nav-link" href="#">Careers</a>
+                </li>
+                <li class="nav-item">
+                  <a target="_blank"class="nav-link" href="#">About</a>
+                </li>
+              </ul>
+              <div class="d-md-flex align-items-center ml-auto">
+                <div class="mx-5  text-center ">
+                  <a target="_blank" id="login" href="#">Login</a>
+                </div>
+                <div class="text-center py-md-0 py-3">
+                  <a target="_blank" href="#"><button class="btn btn-outline-dark" type="button" id="button1" rel="noopener">Register</button></a>
+                </div>
+      
 
-      </div>
-      <div class="row d-flex">
-        <div class="col-12 col-md-6 col-xs-12">
-          <div class="image">
-            <img src="./images/desktop/image-graphic-design.jpg" alt="graphic  image"/>
-        </div>
-        <div class="image1">
-          <img src="./images/mobile/image-graphic-design.jpg" alt="graphic image"/>
-        </div>
-        <div class="caption1">
-          <h2>Graphic Design</h2>
-          <p>
-            Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
-        </div>
-        </div>
-        <div class="col-12 col-xs-12 col-md-6">
-          <div class="image">
-            <img src="./images/desktop/image-photography.jpg" alt="Photography image"/>
-          </div>
-          <div class="image1">
-            <img src="./images/mobile/image-photography.jpg" alt="photography image"/>
-          </div>
-          <div class="caption2">
-            <h2>Photography</h2>
-            <p> Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="clients">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col text-center">
-            <h2 class="heading text-uppercase">Client Testimonials</h2>
-          </div>
-        </div>
-        <div class="row d-flex justify-content-center ">
-          <div class="col-12 col-md-3 col-xs-12 profile text-center">
-            <div class="profilepicture">
-              <img src="./images/image-emily.jpg" alt="emily picture"/>
-            </div>
-            <div class="bio">
-              <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
-              <h4>Emily R.</h4>
-              <h5>Marketing Director</h5>
+              </div>
             </div>
           </div>
-          <div class="col-12 col-xs-12 col-md-3 profile text-center">
-            <div class="profilepicture">
-              <img src="./images/image-thomas.jpg" alt="Thomas picture"/>
-            </div>
-            <div class="bio">
-              <p> Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
-              <h4>Thomas S.</h4>
-              <h5>Chief Operating Officer</h5>
+        </nav>
+      </section>
+    </header>
+
+
+    <!-- Main body-->
+    <main>
+      <div class="container py-5">
+        <div class="row flex-md-row justify-content-center flex-column-reverse align-items-center">
+          <div class="col-12 col-md-6 col-xs-12 text-center text-md-left">
+            <h1>Make remote work</h1>
+            <p>Get your team insync, no matter your location. Streamline processess, create team rituals, and watch productivity soar.</p>
+            <a href="#"><button id="button2">Learn More</button></a>
+            <div class="logos">
+              <img src="./images/client-databiz.svg" alt="databiz"/>
+              <img src="./images/client-audiophile.svg" alt="audiophile"/>
+              <img src="./images/client-meet.svg" alt="meet"/>
+              <img src="./images/client-maker.svg" alt="maker"/>
             </div>
           </div>
-          <div class="col-12 col-xs-12 col-md-3 profile text-center">
-            <div class="profilepicture">
-              <img src="./images/image-jennie.jpg" alt="jennie picture"/>
-            </div>
-            <div class="bio">
-              <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
-              <h4>Jennie F.</h4>
-              <h5>Business Owner</h5>
-            </div>
+          <div class="col-12 col-md-6 col-xs-12 text-center mobile-image">
+            <img src="./images/image-hero-desktop.png" class="float-md-right image "alt="hero-desktop image"/>
+            <img src="./images/image-hero-mobile.png" class="image1" alt="hero-mobile image"/>
           </div>
         </div>
       </div>
-    </section>
-    <section>
-      <!-- Desktop images represent images to be displayed only on desktop view -->
-      <div class="container-fluid ">
-        <div class="row desktop-images">
-          <div class="col col-md-3 gallery">
-            <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="milk bottles"/>
-          </div>
-          <div class="col col-md-3 gallery">
-            <img src="./images/desktop/image-gallery-orange.jpg" alt="orange"/>
-          </div>
-          <div class="col col-md-3 gallery">
-            <img src="./images/desktop/image-gallery-cone.jpg" alt="cone"/>
-          </div>
-          <div class="col col-md-3 gallery">
-            <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="sugar cubes"/>
-          </div>
-        </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Silver Idahosa</a>.
       </div>
-      <!-- mobile images represent images to be displayed only on mobile scrren -->
-      <div class="mobile-images">
-        <img src="./images/mobile/image-gallery-milkbottles.jpg" alt="milk bottles"/>
-        <img src="./images/mobile/image-gallery-orange.jpg"  alt="orange"/>
-      </div>
-      <div class="mobile-images">
-        <img src="./images/mobile/image-gallery-cone.jpg"alt="cone"/>
-        <img src="./images/mobile/image-gallery-sugar-cubes.jpg"alt="sugar cubes"/>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <!-- Logo svg -->
-    <div class="logo1">
-      <svg width="124" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M5.857 18.708c1.638 0 2.995-.36 4.07-1.08 1.075-.721 1.613-1.769 1.613-3.144-.083-1.855-1.464-3.246-4.144-4.173l-1.44-.597c-.314-.1-.538-.198-.67-.298a.45.45 0 01-.198-.373c0-.414.273-.62.819-.62.678 0 1.182.347 1.513 1.043l3.698-1.044c-.893-2.22-2.614-3.329-5.162-3.329-1.522 0-2.788.398-3.797 1.193C1.15 7.08.645 8.116.645 9.39c0 .398.058.766.174 1.106.116.34.29.638.521.894.232.257.455.48.67.671.215.19.488.369.82.534.33.166.582.286.756.36.174.075.41.162.707.261l.422.15 1.49.546c.363.133.6.244.707.335a.449.449 0 01.16.36c0 .431-.404.647-1.215.647-1.191 0-1.903-.53-2.134-1.59L0 14.509c.463 2.8 2.416 4.2 5.857 4.2zm11.636 0c1.638 0 2.845-.63 3.623-1.888v1.615h5.112V5.366h-5.112v7.156c0 1.474-.505 2.21-1.514 2.21-1.026 0-1.539-.736-1.539-2.21V5.366h-5.112v7.653c0 3.793 1.514 5.69 4.542 5.69zm16.103-.273V11.28c0-1.475.504-2.212 1.513-2.212 1.026 0 1.54.737 1.54 2.212v7.155h5.111v-7.652c0-3.793-1.513-5.69-4.541-5.69-1.638 0-2.846.63-3.623 1.888V5.366h-5.113v13.069h5.113zm15.383 0V11.28c0-1.475.504-2.212 1.514-2.212 1.025 0 1.538.737 1.538 2.212v7.155h5.113v-7.652c0-3.793-1.514-5.69-4.542-5.69-1.638 0-2.846.63-3.623 1.888V5.366h-5.113v13.069h5.113zM64.958 24l8.289-18.634H67.91l-2.532 6.684-2.258-6.684h-5.584l5.435 11.802L59.944 24h5.014zm13.67-5.292c1.638 0 2.995-.36 4.07-1.08 1.076-.721 1.614-1.769 1.614-3.144-.083-1.855-1.465-3.246-4.145-4.173l-1.44-.597c-.314-.1-.537-.198-.67-.298a.45.45 0 01-.198-.373c0-.414.273-.62.819-.62.678 0 1.183.347 1.514 1.043l3.698-1.044c-.894-2.22-2.614-3.329-5.162-3.329-1.522 0-2.788.398-3.797 1.193-1.01.795-1.514 1.83-1.514 3.105 0 .398.058.766.173 1.106.116.34.29.638.522.894.231.257.455.48.67.671.215.19.488.369.819.534.33.166.583.286.757.36.173.075.41.162.707.261l.422.15 1.489.546c.364.133.6.244.707.335a.449.449 0 01.161.36c0 .431-.405.647-1.216.647-1.19 0-1.902-.53-2.134-1.59l-3.723.844c.464 2.8 2.416 4.2 5.857 4.2zm9.8-14.137c.91 0 1.613-.215 2.11-.646.495-.43.744-.977.744-1.64 0-.678-.24-1.23-.72-1.651C90.082.21 89.371 0 88.428 0c-.943 0-1.655.211-2.135.634-.48.422-.72.973-.72 1.652 0 .662.249 1.209.745 1.64.497.43 1.2.645 2.11.645zm2.556 13.864V5.366H85.87v13.069h5.113zm7.74.273c1.737 0 2.977-.63 3.722-1.888v1.615h5.112V.472h-5.112v6.534c-.745-1.275-1.985-1.913-3.723-1.913-1.753 0-3.214.642-4.38 1.926-1.166 1.283-1.75 2.91-1.75 4.882 0 1.97.584 3.598 1.75 4.882 1.166 1.283 2.627 1.925 4.38 1.925zm1.39-3.9c-.729 0-1.312-.274-1.75-.82-.439-.547-.658-1.243-.658-2.087 0-.845.215-1.54.645-2.087.447-.547 1.034-.82 1.762-.82s1.311.273 1.75.82c.438.546.657 1.242.657 2.087 0 .844-.219 1.54-.657 2.087-.439.546-1.022.82-1.75.82zm16.698 3.9c2.597 0 4.624-.754 6.08-2.26l-2.11-2.833c-1.042.845-2.217 1.267-3.524 1.267-.992 0-1.799-.224-2.42-.67-.62-.448-.93-.879-.93-1.293h9.604c.083-.298.124-.687.124-1.167 0-2.054-.674-3.677-2.022-4.87-1.349-1.193-3.073-1.789-5.175-1.789-2.25 0-4.028.671-5.335 2.013-1.307 1.341-1.961 2.956-1.961 4.844 0 1.938.69 3.549 2.072 4.833 1.382 1.283 3.247 1.925 5.597 1.925zm2.208-8.149h-5.112c.033-.613.298-1.08.794-1.404.496-.323 1.084-.484 1.762-.484.678 0 1.266.165 1.762.497.497.331.761.795.794 1.391z" fill="#25564b" fill-rule="nonzero"/></svg>
-    </div>
-    <div class="navigation">
-      <ul>
-        <li><a href="#" target="_blank">About</a></li>
-        <li><a href="#" target="_blank">Services</a></li>
-        <li><a href="#" target="_blank">Projects</a></li>
-      </ul>
-    </div>
-    <div class="social-media">
-      <a href="#" target="_blank" aria-label="Facebook"><i class ="fa fa-facebook"></i></a>
-      <a href="#"target="_blank" aria-label="Twitter" ><i class="fa fa-twitter"></i></a>
-      <a href="#" target="_blank" aria-label="Instagram"><i class="fa fa-instagram" ></i></a>
-      <a href="#" target="_blank" aria-label="Pinterest"><i class="fa fa-pinterest"></i></a>
-    </div>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#" target="_blank">Silver Idahosa</a>
-    </div>
-  </footer>
+    </footer>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="./app.js"></script>
-
 </body>
+
 </html>
